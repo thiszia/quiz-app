@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js";></script>
+</head>
+<body onload="displayData()">
+
+    <h1>My Quiz App</h1>
+    <h2>Score : <span id="s_text">0</span></h2>
+
+    <input type="text"  id="name" placeholder="Enter Your Name">
+    <h2 id="question">Question Text</h2>
+
+
+<div id="mainDiv">
+    <ul>
+        <li>
+            <input type="radio" class="answer" name="answer" id="a">
+            <label for="a_text" id="a_text">Question</label>
+        </li>
+        <li>
+            <input type="radio" class="answer" name="answer" id="b">
+            <label for="b_text" id="b_text">Question</label>
+        </li>
+        <li>
+            <input type="radio" class="answer" name="answer" id="c">
+            <label for="c_text" id="c_text">Question</label>
+        </li>
+        <li>
+            <input type="radio" class="answer" name="answer" id="d">
+            <label for="d_text" id="d_text">Question</label>
+        </li>
+    </ul>
+    <button onclick="next()">Next</button>
+</div>
+    
+<script src="app.js"></script>
+</body>
+</html>
